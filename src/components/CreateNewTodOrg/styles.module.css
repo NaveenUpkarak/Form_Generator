@@ -1,0 +1,20 @@
+.inputPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    width: 25%;
+    height: 25px;
+    padding: 5px;
+}
+
+
+.inputBox {
+    margin: 15px;
+}
+
+.fieldName {
+    font-size: large;
+    font-weight: bold;
+}
