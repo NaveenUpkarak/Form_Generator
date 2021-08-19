@@ -4,8 +4,6 @@
 }
 
 .inputField {
-    width: 25%;
-    height: 25px;
     padding: 5px;
 }
 
@@ -17,4 +15,9 @@
 .fieldName {
     font-size: large;
     font-weight: bold;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
 }

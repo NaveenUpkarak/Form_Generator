@@ -1,16 +1,15 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-export default function TextInputField(props) {
+export default function InputField({values}) {
     return (
         <div className={styles.inputBox}>
-            <div className={styles.fieldName}>{props.name}</div>
+            <label>{values.label}</label>
             <input
-                type="text"
-                value={props.value}
+                type={values.type}
+                value={values.value}
                 className={styles.inputField}
             />
         </div>
-        
     )
 }

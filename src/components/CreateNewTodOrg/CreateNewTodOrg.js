@@ -1,12 +1,11 @@
 import React from 'react'
-import LeftPanel from './LeftPanel'
-import RightPanel from './RightPanel'
+import Panel from './Panel'
 
 
 export default function CreateNewTodOrg() {
     return (
         <div>
-            <LeftPanel/>
+            <Panel/>
         </div>
     )
 }
