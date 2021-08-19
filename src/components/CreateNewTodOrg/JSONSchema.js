@@ -1,59 +1,70 @@
-export const JSONSchema = {
-    field_1: {
-        component: {
-            tag: "input",
-            type: "text",
-            value: "text1",
-            label: "TEXT1"
+export const JSONSchema = [
+    {
+        two_column_layout: {
+            left_child: {
+                text_input: {
+                    fields: {
+                        value: "Jack",
+                        label: "*First Name"
+                    },
+                    ui: {
+                        width: "400px",
+                        padding: "5px"
+                    },
+                }
+            },
+            right_child: {
+                text_input: {
+                    fields: {
+                        value: "Keates",
+                        label: "*Last Name"
+                    },
+                    ui: {
+                        width: "400px",
+                        padding: "5px"
+                    },
+                }
+            }
         },
-        ui: {
-
-        },
-        layout: {
-            name: "two_column_layout",
-            position: "left_child"
-        }
     },
-    field_2: {
-        component: {
-            tag: "input",
-            type: "text",
-            value: "text2",
-            label: "TEXT2" 
-        },
-        ui: {
-
-        },
-        layout: {
-            name: "two_column_layout",
-            position: "right_child"
-        }
-    }
-}
-
-export const testSchema = {
-    two_column_layout: {
-        left_child: {
-            component: {
-                tag: "input",
-                type: "text",
-                value: "text1",
-                label: "TEXT1"
+    {
+        text_input: {
+            fields: {
+                value: "Jack@gmail.com",
+                label: "*Email"
             },
             ui: {
-    
+                width: "400px",
+                padding: "5px"
             },
         },
-        right_child: {
-            component: {
-                tag: "input",
-                type: "text",
-                value: "text2",
-                label: "TEXT2"
+    },
+    {
+        two_column_layout: {
+            left_child: {
+                text_input: {
+                    fields: {
+                        value: "COO",
+                        label: "*Job Title"
+                    },
+                    ui: {
+                        width: "400px",
+                        padding: "5px"
+                    },
+                }
             },
-            ui: {
-    
-            },
-        }
+            right_child: {
+                text_input: {
+                    fields: {
+                        value: "19200 Von Karman Ave",
+                        label: "*Street 1"
+                    },
+                    ui: {
+                        width: "400px",
+                        padding: "5px"
+                    },
+                }
+            }
+        },
     }
-}
+]

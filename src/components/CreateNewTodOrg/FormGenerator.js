@@ -1,19 +1,24 @@
 import React from 'react'
 import TwoColumnLayout from './TwoColumnLayout'
-import InputField from './InputField'
+import InputTextField from './InputTextField'
 
 
-export default function FormGenerator({field}) {
+export default function FormGenerator({element}) {
+    const name = Object.keys(element)[0]
+    const fieldValues = Object.values(element)[0]
 
-    const name = field[0]
-    const fieldValues = field[1]
+    let component = <div></div>
 
-    console.log(fieldValues.left_child.component.value)
+    if (name === "two_column_layout") {
+        component = <TwoColumnLayout fields={fieldValues}  />
+    }
+    if (name === "text_input") {
+        component = <InputTextField fields={fieldValues.fields} ui={fieldValues.ui}/>
+    }
 
-    const leftChild = <InputField values={element.component} />
     return (
         <div>
-            <TwoColumnLayout leftChild={leftChild} />
+            {component}
         </div>
     )
 }
