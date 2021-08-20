@@ -66,5 +66,22 @@ export const JSONSchema = [
                 }
             }
         },
-    }
+    },
+    {
+        dropdown: {
+            fields: {
+                dropdown_content: {
+                    link_1: "India",
+                    link_2: "USA",
+                    link_3: "Canada"
+                },
+                value: "Select Country",
+                label: "*Country Code"
+            },
+            ui: {
+                width: "400px",
+                padding: "5px"
+            },
+        },
+    },
 ]

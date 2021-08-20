@@ -1,6 +1,7 @@
 import React from 'react'
 import TwoColumnLayout from '../Layouts/TwoColumnLayout/TwoColumnLayout'
 import InputTextField from "../FormComponents/InputTextField/InputTextField"
+import DropDown from "../FormComponents/DropDown/DropDown"
 
 
 export default function FormGenerator({element}) {
@@ -14,6 +15,9 @@ export default function FormGenerator({element}) {
     }
     if (name === "text_input") {
         component = <InputTextField fields={fieldValues.fields} ui={fieldValues.ui}/>
+    }
+    if (name === "dropdown") {
+        component = <DropDown fields={fieldValues.fields} />
     }
 
     return (
