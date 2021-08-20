@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './styles.module.css'
 
 export default function InputTextField({fields, ui}) {
     console.log(ui)

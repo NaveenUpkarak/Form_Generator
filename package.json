@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ace-builds": "^1.4.12",
     "css-loader": "^6.2.0",
     "react": "^17.0.2",
+    "react-ace": "^9.4.3",
     "react-dom": "^17.0.2",
     "style-loader": "^3.2.1"
   },

@@ -1,6 +1,6 @@
 import React from 'react'
-import TwoColumnLayout from './TwoColumnLayout'
-import InputTextField from './InputTextField'
+import TwoColumnLayout from '../Layouts/TwoColumnLayout/TwoColumnLayout'
+import InputTextField from "../FormComponents/InputTextField/InputTextField"
 
 
 export default function FormGenerator({element}) {

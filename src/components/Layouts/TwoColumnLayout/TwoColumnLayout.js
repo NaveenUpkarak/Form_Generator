@@ -1,6 +1,5 @@
 import React from 'react'
-import InputTextField from './InputTextField'
-
+import InputTextField from "../../FormComponents/InputTextField/InputTextField"
 
 export default function TwoColumnLayout({fields}) {
     const uiLeftChild = fields.left_child.text_input.ui
