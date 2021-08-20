@@ -1,0 +1,28 @@
+.inputPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    padding: 5px;
+}
+
+
+.inputBox {
+    margin: 15px;
+}
+
+.fieldName {
+    font-size: large;
+    font-weight: bold;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+}
+
+.gridView {
+    display: grid;
+    grid-template-columns: auto auto;
+}
